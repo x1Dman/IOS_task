@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="task193048572o234875" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MRP-Vz-d09">
+                                <rect key="frame" x="67" y="99" width="240" height="196"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="5dx-rS-ggt"/>
+                                    <constraint firstAttribute="height" constant="196" id="i3O-mh-ReH"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pe0-5J-VAA">
+                                <rect key="frame" x="164" y="492" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="KoR-bm-laU"/>
+                                    <constraint firstAttribute="height" constant="30" id="UKn-mr-JfK"/>
+                                </constraints>
+                                <state key="normal" title="Refresh"/>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ly3-pU-FH0">
+                                <rect key="frame" x="109" y="391" width="156" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pe0-5J-VAA" secondAttribute="bottom" constant="145" id="92Q-1B-hoH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MRP-Vz-d09" secondAttribute="trailing" constant="68" id="AvL-dn-ZLD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pe0-5J-VAA" secondAttribute="trailing" constant="153" id="ChE-K1-Jxh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pe0-5J-VAA" secondAttribute="bottom" constant="145" id="EnU-gz-5Ir"/>
+                            <constraint firstItem="Pe0-5J-VAA" firstAttribute="top" secondItem="ly3-pU-FH0" secondAttribute="bottom" constant="73" id="Fo8-Uw-QAv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ly3-pU-FH0" secondAttribute="trailing" constant="110" id="HdS-pK-2A3"/>
+                            <constraint firstItem="MRP-Vz-d09" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Oq5-vP-jKr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pe0-5J-VAA" secondAttribute="trailing" constant="165" id="PBX-mZ-qBK"/>
+                            <constraint firstItem="MRP-Vz-d09" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="79" id="dLq-me-Yfa"/>
+                            <constraint firstItem="ly3-pU-FH0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="lTl-di-wNS"/>
+                            <constraint firstItem="Pe0-5J-VAA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="o65-8k-IvH"/>
+                            <constraint firstItem="ly3-pU-FH0" firstAttribute="top" secondItem="MRP-Vz-d09" secondAttribute="bottom" constant="96" id="pk4-qw-EYP"/>
+                            <constraint firstItem="Pe0-5J-VAA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="w2s-N8-ZpY"/>
+                            <constraint firstItem="Pe0-5J-VAA" firstAttribute="top" secondItem="ly3-pU-FH0" secondAttribute="bottom" constant="73" id="zw8-rd-E4O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ColorController" destination="ly3-pU-FH0" id="CJ4-zM-GiP"/>
+                        <outlet property="Image" destination="MRP-Vz-d09" id="1OY-n1-d3J"/>
+                        <outlet property="ResetButton" destination="Pe0-5J-VAA" id="HXF-iN-KE5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="130.88455772113943"/>
+        </scene>
+    </scenes>
+</document>
